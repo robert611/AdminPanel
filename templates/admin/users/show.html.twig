@@ -1,0 +1,39 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <section class="col-xs-12 col-md-9">
+            <div class="card card-body">
+                <h1 class="mb-3">Mark</h1>
+                <div class="table-responsive mb-2">
+                    <table class="table">
+                        <tr>
+                            <th>Id</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>Username</th>
+                            <td>Mark</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mark@email.com	</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <a class="b-btn b-btn-info mb-1" href="{{ path('admin_user_index') }}">back to list</a>
+
+                <a class="b-btn b-btn-success mb-1" href="{{ path('admin_user_edit', {'id': 1}) }}">edit</a>
+
+                <button class="b-btn b-btn-danger mb-1">Delete</button>
+            </div>
+        </section>
+
+        <section class="col-xs-12 col-md-3">
+            <div class="card card-body">
+                <img alt="user-avatar" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fuser-avatar-flat-icons%2F512%2FUser_Avatar-02-512.png&f=1&nofb=1">
+            </div>
+        </section>
+    </div>  
+{% endblock %}

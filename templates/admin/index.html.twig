@@ -1,0 +1,64 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }} 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="{{ asset('assets/js/charts/users.js') }}"></script>
+    <script src="{{ asset('assets/js/charts/pageview.js') }}"></script>
+    <script src="{{ asset('assets/js/charts/revenue.js') }}"></script>
+    <script src="{{ asset('assets/js/charts/notifications.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="col-sm-12 col-md-3">
+            <div class="card text-center admin-statistic-card">
+                <div class="card-body">
+                    <i class="material-icons">people</i>
+                    <h1>35</h1>
+                </div>
+                <div class="admin-statistic-card-background">
+                    <canvas id="users-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3">
+            <div class="card text-center admin-statistic-card">
+                <div class="card-body">
+                    <i class="material-icons">pageview</i>
+                    <h1>1245</h1>
+                </div>
+                <div class="admin-statistic-card-background">
+                    <canvas id="pageview-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3">
+            <div class="card text-center admin-statistic-card">
+                <div class="card-body">
+                    <i class="material-icons">attach_money</i>
+                    <h1>375.02</h1>
+                </div>
+                <div class="admin-statistic-card-background">
+                    <canvas id="revenue-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3">
+            <div class="card text-center admin-statistic-card">
+                <div class="card-body">
+                    <i class="material-icons">notifications</i>
+                    <h1>92</h1>
+                </div>
+                <div class="admin-statistic-card-background">
+                    <canvas id="notifications-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

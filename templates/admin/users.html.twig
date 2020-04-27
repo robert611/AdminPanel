@@ -1,0 +1,112 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block body %}
+    <div class="container mb-5">
+        <div class="card col-md-12">
+            <div class="card-header">
+                Users
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#id</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>mark@email.com</td>
+                                <td>
+                                    <a href="{{ path('admin_user_show', {'id' : 1}) }}"><button class="b-btn b-btn-primary">Show</button></a>
+                                    <a href="{{ path('admin_user_edit', {'id': 1}) }}"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>thornton@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>thornton@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                             <tr>
+                                <th scope="row">4</th>
+                                <td>Fiona</td>
+                                <td>fiona@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                             <tr>
+                                <th scope="row">5</th>
+                                <td>Maria</td>
+                                <td>maria@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                             <tr>
+                                <th scope="row">6</th>
+                                <td>Chuck</td>
+                                <td>chuck@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                             <tr>
+                                <th scope="row">7</th>
+                                <td>Michael</td>
+                                <td>michael@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                             <tr>
+                                <th scope="row">8</th>
+                                <td>Tifanny</td>
+                                <td>tifanny@email.com</td>
+                                <td>
+                                    <button class="b-btn b-btn-primary">Show</button>
+                                    <a href="#"><button class="b-btn b-btn-secondary">Edit</button></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="pagination text-center">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!">6</a></li>
+        <li class="waves-effect"><a href="#!">7</a></li>
+        <li class="waves-effect"><a href="#!">8</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+{% endblock %}
